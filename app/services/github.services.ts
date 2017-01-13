@@ -10,7 +10,7 @@ export class GithubService{
     constructor(private _http: Http)
     {
         console.log('GithubService Ready...');
-        this.username = 'bradtraversy';
+        this.username = 'gsingh737';
     }
     getUser(){
        return this._http.get('http://api.github.com/users/'+this.username+ '?client_id='+this.client_id + '&client_secret=' + this.client_secret).map(res=>res.json());
